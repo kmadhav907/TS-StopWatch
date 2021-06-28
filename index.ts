@@ -11,13 +11,13 @@ function startTimer() {
     timerCycle();
   }
 }
-function stopTimer() {
+function stopTimer(): void {
   if (stoptime == false) {
     stoptime = true;
   }
 }
 
-function timerCycle() {
+function timerCycle(): void {
   if (stoptime == false) {
     sec = parseInt(sec);
     min = parseInt(min);
@@ -51,7 +51,7 @@ function timerCycle() {
   }
 }
 
-function resetTimer() {
+function resetTimer(): void {
   timer.innerHTML = '00:00:00';
   stoptime = true;
   hr = 0;
